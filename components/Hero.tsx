@@ -9,11 +9,28 @@ const badges = ["Laravel", "PHP", "MySQL", "Tailwind CSS", "Next.js"];
 
 export default function Hero() {
   return (
-    <section
-      id="accueil"
-      className="relative overflow-hidden bg-[radial-gradient(ellipse_90%_70%_at_50%_0%,#ff5a1f_0%,#8a2508_35%,#0b0b0b_75%)]"
-    >
-      <div className="mx-auto grid min-h-screen max-w-6xl items-center gap-12 px-6 pb-20 pt-32 md:grid-cols-[1.4fr_1fr]">
+    <section id="accueil" className="relative overflow-hidden bg-base">
+      {/* 1. Dégradé orange sur toute la hauteur */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_110%_90%_at_70%_25%,#e07a3f_0%,#b8501f_35%,#6b2209_65%,#1a0a05_100%)]"
+      />
+
+      {/* 2. Fondu vers le noir, juste avant le bandeau */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-base"
+      />
+
+      {/* 3. Texte « Full Stack » en contour */}
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute -left-[1vw] bottom-8 select-none whitespace-nowrap text-[20vw] font-bold leading-none text-transparent [-webkit-text-stroke:1.5px_rgba(255,255,255,0.12)] md:text-[10vw]"
+      >
+        Full Stack
+      </span>
+
+      <div className="relative z-10 mx-auto grid min-h-screen max-w-6xl items-center gap-12 px-6 pb-20 pt-32 md:grid-cols-[1.4fr_1fr]">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -25,7 +42,7 @@ export default function Hero() {
           </p>
 
           <h1 className="mt-5 text-5xl font-semibold leading-[1.05] tracking-tight text-white md:text-7xl">
-            Je construis des applications web pour de{" "}
+            Des solutions web conçues pour{" "}
             <em className="font-serif font-normal italic">vraies</em>{" "}
             entreprises.
           </h1>

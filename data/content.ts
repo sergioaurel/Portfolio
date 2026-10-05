@@ -6,10 +6,10 @@ export const profile = {
   title: "Développeur Web Full-Stack",
   location: "Cotonou, Bénin",
   tagline:
-    "Je conçois des applications web fiables et utiles, pensées pour le marché béninois, avec Laravel, PHP, MySQL et Tailwind CSS.",
+    "Développeur web spécialisé dans la création d'applications modernes, performantes et adaptées aux besoins des entreprises. De l'idée au déploiement, je transforme des concepts en solutions web concrètes.",
   github: "https://github.com/sergioaurel",
   email: "sergioaurelkpodo@gmail.com", // à remplacer
-  siteUrl: "https://ton-portfolio.vercel.app", // à remplacer après le déploiement
+  siteUrl: "https://portfolio-three-orpin-h5vwmrcmb1.vercel.app/", // à remplacer après le déploiement
   cv: "/cv-aurel.pdf",
   availability: "Disponible pour des missions freelance", // à adapter
 };
